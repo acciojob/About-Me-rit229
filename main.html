@@ -1,31 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3 random audios</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
-  <nav>
-    <ul>
-      <li><a href="#audio1">Audio 1</a></li>
-      <li><a href="#audio2">Audio 2</a></li>
-      <li><a href="#audio3">Audio 3</a></li>
-    </ul>
-  </nav>
-  <h1>3 random audios</h1>
-  <audio controls id="audio1">
-    <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <audio controls id="audio2">
-    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-    Your browser does not support the audio element.
-  </audio>
-  <audio controls id="audio3">
-    <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+	<div class="skill">
+    <p>HTML</p>
+    <div class="progress-bar">
+        <div class="progress" style="width: 80%;"></div>
+    </div>
+</div>
+    <h1>Personal Profile</h1>
+    
+    <h2>Name</h2>
+    <p>Your Full Name</p>
+    
+    <h2>Email</h2>
+    <p>Your Email Address</p>
+    
+    <h2>Profile</h2>
+    <p>The profile you are applying for</p>
+    
+    <h2>About Me</h2>
+    <p>A brief description of yourself</p>
+    
+    <h2>Skills</h2>
+    <p>Graphical representation of your skills (you can use images/icons here)</p>
+    
+    <h2>Requirements</h2>
+    <table>
+        <tr>
+            <th>Section</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Your full name.</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>Your email address.</td>
+        </tr>
+        <tr>
+            <td>Profile</td>
+            <td>The profile you are applying for.</td>
+        </tr>
+        <tr>
+            <td>About Me</td>
+            <td>A brief description of yourself.</td>
+        </tr>
+        <tr>
+            <td>Skills</td>
+            <td>Graphical representation of your skills.</td>
+        </tr>
+    </table>
 </body>
+
 </html>
+
