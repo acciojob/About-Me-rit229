@@ -1,88 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Profile</title>
+    <title>Personal Profile</title>
+    <!-- Font Awesome for Skill Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            background: #f6f6f6;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+  }
+        .container {
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 24px #ccc;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 30px 40px;
+            display: flex;
+            gap: 40px;
         }
-        h1 {
-            color: #333;
+        .left, .right {
+            flex: 1;
         }
-        h2 {
-            color: #555;
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 3px;
+            box-shadow: 0 0 12px #ccc;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .section-header {
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin: 32px 0 12px;
+ }
+        .item-text {
+            margin: 8px 0 16px;
+            font-size: 1.06rem;
         }
-        table, th, td {
-            border: 1px solid black;
+        .skills-list {
+            margin: 20px 0 0 0;
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
+        .skill-entry {
+            margin-bottom: 17px;
         }
-    </style>
+        .skill-icons {
+            display: inline-flex;
+            gap: 18px;
+            align-items: center;
+            margin-right: 14px;
+        }
+        .skill-label {
+            font-size: 1.05rem;
+            font-weight: 500;
+            margin-right: 8px;
+        }
+        .skill-bar-bg {
+            background: #e8e8e8;
+            border-radius: 4px;
+            height: 7px;
+            width: 365px;
+            display: inline-block;
+            vertical-align: middle;
+ margin-left: 12px;
+        }
+        .skill-bar-fill {
+            background: #2176de;
+            height: 100%;
+            border-radius: 4px;
+            display: block;
+        }
+        .skill-percent {
+            font-size: 0.99rem;
+            font-weight: 500;
+            margin-left: 8px;
+            color: #444;
+        }
+        .about-me-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 2px;
+            border-bottom: 2px solid #2176de;
+            width: fit-content;
+            padding-bottom: 2px;
+        }
+        .about-text {
+            font-size: 1.13rem;
+            color: #444;
+            line-height: 1.6;
+            margin-top: 16px;
+        }
+</style>
 </head>
-
 <body>
-	<div class="skill">
-    <p>HTML</p>
-    <div class="progress-bar">
-        <div class="progress" style="width: 80%;"></div>
+<div class="container">
+    <div class="left">
+        <!-- Profile Photo -->
+        <img src="your-image-path.jpg" alt="Profile picture" class="profile-pic">
+        
+        <div class="section-header">Name</div>
+        <div class="item-text">Shubham Bhola</div>
+        
+        <div class="section-header">Profile</div>
+        <div class="item-text">Software Developer</div>
+
+        <div class="section-header">Email</div>
+        <div class="item-text">abcdef796@gmail.com</div>
+        <div class="section-header">Skills</div>
+        <div class="skills-list">
+            <div class="skill-entry">
+                <span class="skill-icons">
+                    <span class="skill-label">React</span> <i class="fab fa-react" style="color:#61dbfb"></i>
+                    <span class="skill-label">CSS</span> <i class="fab fa-css3-alt" style="color:#0277bd"></i>
+                    <span class="skill-label">JavaScript</span>
+                    <span style="background:#f9dc3d;padding:2px 7px;border-radius:4px;"><i class="fab fa-js-square" style="color:#000"></i> JS</span>
+                </span>
+                <span class="skill-percent">95%</span>
+                <span class="skill-bar-bg"><span class="skill-bar-fill" style="width:95%"></span></span>
+            </div>
+<div class="skill-entry">
+                <span class="skill-icons">
+                    <span class="skill-label">NodeJS</span> <i class="fab fa-node-js" style="color:#65b84d"></i>
+                    <span class="skill-label">MongoDB</span> <i class="fas fa-database" style="color:#4cb966"></i>
+                </span>
+                <span class="skill-percent">90%</span>
+                <span class="skill-bar-bg"><span class="skill-bar-fill" style="width:90%"></span></span>
+            </div>
+            <div class="skill-entry">
+                <span class="skill-icons">
+                    <span class="skill-label">C/C++</span> <i class="fas fa-code" style="color:#3949ab"></i>
+                    <span class="skill-label">Python</span> <i class="fab fa-python" style="color:#417ba7"></i>
+                    <span class="skill-label">Batch</span> <span style="background:#222;padding:3px 8px;border-radius:4px;color:#fff;font-weight:bold;">B</span>
+</span>
+                <span class="skill-percent">99%</span>
+                <span class="skill-bar-bg"><span class="skill-bar-fill" style="width:99%"></span></span>
+            </div>
+            <div class="skill-entry">
+                <span class="skill-icons">
+                    <span class="skill-label">AWS</span> <span style="background:#fff;padding:2px 5px;border-radius:3px;border:1px solid #eee;"><i class="fab fa-aws" style="color:#f19605"></i> aws</span>
+                    <span class="skill-label">Hadoop</span> <span style="background:#ffeb3b;padding:2px 7px;border-radius:4px;"><i class="fas fa-hat-wizard" style="color:#333"></i></span>
+                </span>
+                <span class="skill-percent">93%</span>
+                <span class="skill-bar-bg"><span class="skill-bar-fill" style="width:93%"></span></span>
+ </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="about-me-header">About me</div>
+        <div class="about-text">
+            I am a Self-starter with a passion to adapt and evangelise new technologies. I have a passion for software development with a diverse skillset ranging from the MERN stack to a stronghold on data structures and algorithms. I like to tackle complex challenges head-on to deliver technically sound solutions with optimum efficiency.<br><br>
+            I believe that magic is possible with a blend of imagination, hard-work and passion. Most of all, I believe in determination and honest efforts to enhance my skills in order to contribute to the growth of society.
+        </div>
     </div>
 </div>
-    <h1>Personal Profile</h1>
-    
-    <h2>Name</h2>
-    <p>Your Full Name</p>
-    
-    <h2>Email</h2>
-    <p>Your Email Address</p>
-    
-    <h2>Profile</h2>
-    <p>The profile you are applying for</p>
-    
-    <h2>About Me</h2>
-    <p>A brief description of yourself</p>
-    
-    <h2>Skills</h2>
-    <p>Graphical representation of your skills (you can use images/icons here)</p>
-    
-    <h2>Requirements</h2>
-    <table>
-        <tr>
-            <th>Section</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Name</td>
-            <td>Your full name.</td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td>Your email address.</td>
-        </tr>
-        <tr>
-            <td>Profile</td>
-            <td>The profile you are applying for.</td>
-        </tr>
-        <tr>
-            <td>About Me</td>
-            <td>A brief description of yourself.</td>
-        </tr>
-        <tr>
-            <td>Skills</td>
-            <td>Graphical representation of your skills.</td>
-        </tr>
-    </table>
 </body>
-
 </html>
-
